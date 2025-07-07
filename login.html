@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - EasyGo AMS</title>
+  <link rel="stylesheet" href="./css/login.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="login-container">
+    <form id="loginForm" onsubmit="return validateLogin()">
+      <h1>EasyGo - AMS</h1>
+
+      <div id="error-message" class="error-message"></div>
+
+      <label>User Id :</label>
+      <div class="input-box">
+        <input type="text" id="userId" placeholder="Enter numeric User ID" maxlength="5" />
+        <i class='bx bxs-user'></i>
+      </div>
+
+      <label>Password :</label>
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Enter Password" maxlength="30" />
+        <i class='bx bxs-lock'></i>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+
+      <p class="register-link">
+        New User? <a href="register.html"><strong>Register Yourself</strong></a>
+      </p>
+    </form>
+  </div>
+
+  <script src="./js/login.js"></script>
+</body>
+</html>
+

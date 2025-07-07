@@ -1,0 +1,82 @@
+body {
+      background-color: teal;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .register-container {
+      background-color: Gray94;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      color: black;
+      width: 450px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .buttons {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    #registerBtn {
+      background-color: DodgerBlue;
+      color: white;
+    }
+
+    #registerBtn:hover {
+      background-color: #0047ab; /* cobalt */
+    }
+
+    #acknowledgment {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: blue;
+    }
+
+    .error {
+      color: yellowgreen;
+      text-align: center;
+      margin-top: 5px;
+      font-size: 20px;
+    }
+
+    .register-link {
+  text-align: center;
+  width: 100%;
+}

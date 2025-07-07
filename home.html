@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirLineManagementSystem</title>
+  <link rel="stylesheet" href="./css/home.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <button onclick="goToPage('home')">Home</button>
+      <button onclick="goToPage('profile')">My Profile</button>
+      <button onclick="goToPage('trips')">My Trips</button>
+      <button onclick="logout()">Logout</button>
+      <span class="welcome">Welcome John Doe !!!</span>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="title">AirLineManagementSystem</h1>
+    <section id="home" class="page">
+      <h2>Search Flights</h2>
+      <form id="searchForm">
+        <label>Origin: <select><option>Select Origin</option></select></label>
+        <label>Destination: <select><option>Select Destination</option></select></label>
+        <label>Departure Date: <input type="date" /></label>
+        <label>No. of Travelers: <input type="number" value="1" min="1" /></label>
+        <label>Class:
+          <select>
+            <option>Select Class</option>
+            <option>Economy</option>
+            <option>Executive</option>
+            <option>Business</option>
+          </select>
+        </label>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section id="profile" class="page hidden">
+      <h2>My Profile</h2>
+      <div id="profileDetails">
+        <label>Name: <input type="text" id="name" value="John Doe" disabled /></label>
+        <label>Email: <input type="email" id="email" value="john@example.com" disabled /></label>
+        <label>Phone: <input type="tel" id="phone" value="1234567890" disabled /></label>
+        <button id="editBtn" onclick="enableEdit()">Edit</button>
+        <button id="saveBtn" class="hidden" onclick="saveProfile()">Save</button>
+      </div>
+    </section>
+
+    <section id="trips" class="page hidden">
+      <h2>My Trips</h2>
+      <nav class="trip-nav">
+        <a href="#" onclick="showTrip('upcoming')">Upcoming</a>
+        <a href="#" onclick="showTrip('cancelled')">Cancelled</a>
+        <a href="#" onclick="showTrip('completed')">Completed</a>
+      </nav>
+      <div id="tripDetails"></div>
+    </section>
+  </main>
+
+  <script src="./js/home.js"></script>
+</body>
+</html>
+
+
